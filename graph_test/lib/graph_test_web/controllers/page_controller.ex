@@ -6,4 +6,8 @@ defmodule GraphTestWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+
+  def print_something(conn, _params) do
+    text(conn, "Something HAHAHA")
+  end
 end
